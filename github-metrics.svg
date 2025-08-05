@@ -1318,64 +1318,77 @@
                             <section class="activity">
                                 <div class="field">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Deleted
+                      branch
+                                        <span class="code">feature/savegame</span>
+                                        in
+                                        <span class="repo">ai-arena-project/gameserver</span>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                         <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                                     </svg>
                                     <div class="content">
-                                        Pushed 1 commit in
+                                        Pushed 6 commits in
                                         <span class="repo">ai-arena-project/gameserver</span>
                                     </div>
                                 </div>
                                 <div class="details">
                                     <div>on branch <span class="code">main</span></div>
                                     <div class="commit">
-                                        <div class="sha">#a4f515c</div>
-                                        <div class="message">Create pylint.yml</div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="row fill-width">
-                            <section class="activity">
-                                <div class="field">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
-                                    </svg>
-                                    <div class="content">
-                                        Pushed 1 commit in
-                                        <span class="repo">ai-arena-project/mapeditor</span>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <div>on branch <span class="code">main</span></div>
-                                    <div class="commit">
-                                        <div class="sha">#2988210</div>
-                                        <div class="message">Create pylint.yml</div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="row fill-width">
-                            <section class="activity">
-                                <div class="field">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
-                                    </svg>
-                                    <div class="content">
-                                        Pushed 2 commits in
-                                        <span class="repo">ai-arena-project/demo-repository</span>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <div>on branch <span class="code">main</span></div>
-                                    <div class="commit">
-                                        <div class="sha">#e0916f0</div>
-                                        <div class="message">Merge pull request #1 from ai-arena-project/add-badges-to-readme
+                                        <div class="sha">#0c06ba5</div>
+                                        <div class="message">Merge pull request #1 from ai-arena-project/feature/savegame
 
-Add workflow badges to README</div>
+Feature/savegame</div>
                                     </div>
                                     <div class="commit">
-                                        <div class="sha">#4e19a72</div>
-                                        <div class="message">Add workflow badges to README</div>
+                                        <div class="sha">#71495e9</div>
+                                        <div class="message">Improve client disconnection handling and refine logging
+
+- Ensure broadcast messages are logged only once.
+- Safely handle disconnections by creating a copy of client sockets to avoid iteration issues.
+- Adjust logging for missing sockets during cleanup and include fallback to close sockets regardless.
+- Improve disconnect logging clarity with conditional logging for `player_id`.
+
+Signed-off-by: m1nd &lt;m1nd@m1nd.io&gt;</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#eba2188</div>
+                                        <div class="message">Refine player position and checkpoint filtering to exclude internal fields.
+
+Signed-off-by: m1nd &lt;m1nd@m1nd.io&gt;</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#ef2c95b</div>
+                                        <div class="message">Change log level from INFO to DEBUG for logging messages
+
+- Adjusted logging statements across `aiarena.py`, `lobby.py`, and `base_game.py` to use DEBUG instead of INFO for finer-grained logs.
+- Simplified logger initialization in `base_game.py` to prevent redundant setup.
+
+Signed-off-by: m1nd &lt;m1nd@m1nd.io&gt;</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#d02f9d2</div>
+                                        <div class="message">Remove .gitlab-ci.yml
+
+Signed-off-by: m1nd &lt;m1nd@m1nd.io&gt;</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#4b89a06</div>
+                                        <div class="message">Add `wall` property for border handling and refactor map structure
+
+- Removed explicit wall object generation, replaced with `wall` property for maps with borders.
+- Updated position validation logic to account for the new `wall` property.
+- Modified map processing to reflect the presence of borders using the `wall` flag.
+- Updated README to document the new `wall` property and its benefits.</div>
                                     </div>
                                 </div>
                             </section>
@@ -1388,12 +1401,12 @@ Add workflow badges to README</div>
                                     </svg>
                                     <div class="content">
                                         Merged
-                                        <span class="issue">#1 Add workflow badges to README</span>
+                                        <span class="issue">#1 Feature/savegame</span>
                                     </div>
                                 </div>
                                 <div class="details">
-                                    <div> in <span class="repo">ai-arena-project/demo-repository</span></div>
-                                    <div>1 file changed <span class="code">++4 --0</span></div>
+                                    <div> in <span class="repo">ai-arena-project/gameserver</span></div>
+                                    <div>8 files changed <span class="code">++243 --155</span></div>
                                 </div>
                             </section>
                         </div>
@@ -1405,12 +1418,28 @@ Add workflow badges to README</div>
                                     </svg>
                                     <div class="content">
                                         Opened
-                                        <span class="issue">#1 Add workflow badges to README</span>
+                                        <span class="issue">#1 Feature/savegame</span>
                                     </div>
                                 </div>
                                 <div class="details">
-                                    <div> in <span class="repo">ai-arena-project/demo-repository</span></div>
-                                    <div>1 file changed <span class="code">++4 --0</span></div>
+                                    <div> in <span class="repo">ai-arena-project/gameserver</span></div>
+                                    <div>8 files changed <span class="code">++243 --155</span></div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Created new
+                      branch
+                                        <span class="code">feature/savegame</span>
+                                        in
+                                        <span class="repo">ai-arena-project/gameserver</span>
+                                    </div>
                                 </div>
                             </section>
                         </div>
@@ -1437,7 +1466,7 @@ Add workflow badges to README</div>
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 5 Aug 2025, 14:03:59 (timezone Europe/Berlin) with lowlighter/metrics@3.34.0</span>
+                <span>Last updated 5 Aug 2025, 15:15:50 (timezone Europe/Berlin) with lowlighter/metrics@3.34.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
